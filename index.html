@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="icon" type="image/png" href="logo3.ico">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0f0f0f;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1e1e1e;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: #00eaff;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 300;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00eaff;
+    }
+
+    .hero {
+    padding: 100px 40px;
+    text-align: center;
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('banner.png') center/cover no-repeat;
+    color: #fff;
+    }
+
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .section {
+      padding: 80px 40px;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #00eaff;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background: #1e1e1e;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: #00eaff;
+      border: none;
+      border-radius: 5px;
+      color: #000;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #00c4d6;
+    }
+    .contact-links a {
+  display: inline-block;
+  margin: 8px 0;
+  padding: 10px 20px;
+  background: #00eaff;
+  color: #000;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 234, 255, 0.2);
+}
+
+.contact-links a:hover {
+  background: #00c4d6;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Aryarshi Das</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+        <a href="gallery.html" target="_blank">Certificates</a>
+      </nav>
+      
+  </header>
+
+  <section class="hero">
+    <h2>Hi, I'm Arya</h2>
+    <p>Developer | Designer | Dreamer</p>
+    <button onclick="scrollToSection('about')">Explore More</button>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>Hello! I'm Aryarshi, a passionate developer with a strong interest in building impactful software solutions. I love experimenting with new technologies, designing creative interfaces, and contributing to open source.</p>
+    <br>
+    <p>I am currently persuing my Bachelor Degree ( BTech in Computer Science and Engineering) at Indian Institute Of Information Technology, Kalyani (IIIT Kalyani).</p>
+    <br>
+    <p>I have done various online courses to develope skills like HTML5, CSS3, JS, React-NodeJS from the University of Michigan. I have also worked on Python and I am capable of developing applications with GUI through Tkinter and Kivy. I have also worked on DataBases through MySQL and Python Flask.</p>
+    <br>
+    <p>I am recognized by the CISCE Board,New Delhi for being among the top 0.1% students in Computer Science. All the certificates are attached in the following page:</p>
+    <br>
+    <button onclick="window.open('gallery.html', '_blank')">View Certificates</button>
+
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Snake Game in C</h3>
+        <p>A console-based snake game with multiplayer and difficulty levels.</p>
+      </div>
+      <div class="card">
+        <h3>Automated Bots in Discord</h3>
+        <p>Responsive, automated personal bots to perform operations as given by the user.</p>
+      </div>
+      <div class="card">
+        <h3>Weather Report App in Python</h3>
+        <p>A windows application using TKinter that gives the weather report for a particular area.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements" class="section">
+    <h2>Achievements</h2>
+    <ul>
+      <li>Enigma 2025: Round-1 Winner (Automatic line following robot)</li>
+      <li>Completed University of Michigan's Web Development Course</li>
+      <li>SCI-PHY 2025 : Obscura Winner</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Email: aryarshi@example.com</p>
+    <div class="contact-links">
+      <a href="https://www.instagram.com/_aryarshi_/" target="_blank">Visit My Instagram</a><br>
+      <a href="https://github.com/Aryarshi" target="_blank">Visit My GitHub</a><br>
+      <a href="https://www.linkedin.com/in/aryarshi-das-16b1242bb" target="_blank">Visit My LinkedIn</a>
+    </div>
+  </section>
+  
+
+  <footer>
+    &copy; 2025 Aryarshi Das | All rights reserved
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
